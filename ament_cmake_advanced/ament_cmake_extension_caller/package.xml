@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ament_cmake_extension_caller</name>
+  <version>0.0.0</version>
+  <description>example package to show ament extenstion registration</description>
+  <maintainer email="kohei.sakamoto@fixstars.com">Kohei Sakamoto</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake_core</buildtool_depend>
+  <depend>simple_ament_cmake_extension</depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

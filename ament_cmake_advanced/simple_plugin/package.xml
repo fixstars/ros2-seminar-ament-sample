@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>simple_plugin</name>
+  <version>0.0.0</version>
+  <description>example package to show implementation of plugin</description>
+  <maintainer email="kohei.sakamoto@fixstars.com">Kohei Sakamoto</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>simple_plugin_base</depend>
+  <depend>pluginlib</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <!-- 必要かどうか不明。除去してもプラグインは動作した -->
+    <!-- 他の plugin を見ると base class のタグを使っている模様。 -->
+    <simple_plugin_base plugin="${prefix}/plugins_description.xml"/>
+  </export>
+</package>

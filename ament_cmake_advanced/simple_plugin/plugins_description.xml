@@ -1,0 +1,11 @@
+<!-- パスにはパッケージ名を入れる -->
+<library path="simple_plugin">
+  <!-- name: プラグインロードする際のキー -->
+  <!-- type: プラグインベースクラス名 -->
+  <!-- base_class_type: プラグインベースクラス名 -->
+  <!-- name は省略可、省略した場合は type がプラグインロードのキーになる -->
+  <class name="simple_plugin/SimplePlugin"
+         type="simple_plugin::SimplePlugin" base_class_type="simple_plugin::SimplePluginBase">
+    <description>This is a sample plugin.</description>
+  </class>
+</library>

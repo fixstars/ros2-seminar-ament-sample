@@ -1,0 +1,3 @@
+node_with_resources:
+  ros__parameters:
+    data: "parameter string"
